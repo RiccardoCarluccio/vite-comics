@@ -42,60 +42,64 @@
 
 <template>
   <footer>
-    <div class="container">
-      <div id="footer-background" class="d-flex justify-content-between align-items-center">
-        <div class="d-flex">
-          <div class="d-flex flex-wrap flex-column gap-5">
-            <ul class="nav nav-pills d-flex flex-column">
-              <li class="nav-item" v-for="link in dcComicsLinks">
-                <a href="#" class="nav-link" :class="{ active: link.name === 'Prodotti' }">
-                  {{ link.name }}
-                </a>
-              </li>
-            </ul>
+    <div id="footer-background" class="container-fluid">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="d-flex">
+            <div class="d-flex flex-wrap flex-column gap-5">
+              <ul class="nav nav-pills d-flex flex-column">
+                <li class="nav-item" v-for="link in dcComicsLinks">
+                  <a href="#" class="nav-link" :class="{ active: link.name === 'Prodotti' }">
+                    {{ link.name }}
+                  </a>
+                </li>
+              </ul>
 
-            <ul class="nav nav-pills d-flex flex-column">
-              <li class="nav-item" v-for="link in shop">
-                <a href="#" class="nav-link" :class="{ active: link.name === 'Prodotti' }">
-                  {{ link.name }}
-                </a>
-              </li>
-            </ul>
+              <ul class="nav nav-pills d-flex flex-column">
+                <li class="nav-item" v-for="link in shop">
+                  <a href="#" class="nav-link" :class="{ active: link.name === 'Prodotti' }">
+                    {{ link.name }}
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <ul class="nav nav-pills d-flex flex-column">
+                <li class="nav-item" v-for="link in dc">
+                  <a href="#" class="nav-link" :class="{ active: link.name === 'Prodotti' }">
+                    {{ link.name }}
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <ul class="nav nav-pills d-flex flex-column">
+                <li class="nav-item" v-for="link in sites">
+                  <a href="#" class="nav-link" :class="{ active: link.name === 'Prodotti' }">
+                    {{ link.name }}
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div>
-            <ul class="nav nav-pills d-flex flex-column">
-              <li class="nav-item" v-for="link in dc">
-                <a href="#" class="nav-link" :class="{ active: link.name === 'Prodotti' }">
-                  {{ link.name }}
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <ul class="nav nav-pills d-flex flex-column">
-              <li class="nav-item" v-for="link in sites">
-                <a href="#" class="nav-link" :class="{ active: link.name === 'Prodotti' }">
-                  {{ link.name }}
-                </a>
-              </li>
-            </ul>
-          </div>
+
+          <img src="../../vue-dc-comics-1/img/dc-logo-bg.png" alt="DC Logo Background">
         </div>
-
-        <img src="../../vue-dc-comics-1/img/dc-logo-bg.png" alt="DC Logo Background">
       </div>
 
-      <div class="container bg-secondary d-flex justify-content-between align-items-center">
-        <div>
-          <button type="button" class="btn btn-secondary border border-primary text-uppercase">sign-up now!</button>
-        </div>
-        <div class="d-flex justify-content-end align-items-center gap-3 py-3">
-          <h4 class="text-uppercase text-primary">follow us</h4>
-          <i class="fa-solid fa-dragon"></i>
-          <i class="fa-solid fa-dragon"></i>
-          <i class="fa-solid fa-dragon"></i>
-          <i class="fa-solid fa-dragon"></i>
-          <i class="fa-solid fa-dragon"></i>
+      <div class="container-fluid bg-secondary">
+        <div class="container d-flex justify-content-between align-items-center">
+          <div>
+            <button type="button" class="btn btn-outline-primary text-uppercase">sign-up now!</button>
+          </div>
+          <div class="d-flex justify-content-end align-items-center gap-3 py-3">
+            <h4 class="text-uppercase text-primary">follow us</h4>
+            <i class="fa-solid fa-dragon"></i>
+            <i class="fa-solid fa-dragon"></i>
+            <i class="fa-solid fa-dragon"></i>
+            <i class="fa-solid fa-dragon"></i>
+            <i class="fa-solid fa-dragon"></i>
+          </div>
         </div>
       </div>
     </div>

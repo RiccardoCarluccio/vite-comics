@@ -2,18 +2,17 @@
   export default {
     data() {
       return {
-        dcComicsLinks: [
+        navLinks: [
           { name: "characters", path: "/" },
           { name: "comics", path: "/" },
           { name: "movies", path: "/" },
           { name: "tv", path: "/" },
           { name: "games", path: "/" },
+          { name: "collectibles", path: "/" },
           { name: "videos", path: "/" },
+          { name: "fans", path: "/" },
           { name: "news", path: "/" },
-        ],
-        shop: [
-          { name: "shop dc", path: "/" },
-          { name: "shop dc collectibles", path: "/" },
+          { name: "shop", path: "/" },
         ],
       };
     },
@@ -21,7 +20,9 @@
 </script>
 
 <template>
-  <footer>
+  <header>
+    <img src="../../vue-dc-comics-1/img/dc-logo.png" alt="DC Logo">
+
     <ul class="nav nav-pills">
       <li class="nav-item" v-for="link in navLinks">
         <a href="#" class="nav-link" :class="{ active: link.name === 'Prodotti' }">
@@ -29,11 +30,9 @@
         </a>
       </li>
     </ul>
-
-    <img src="../../vue-dc-comics-1/img/dc-logo-bg.png" alt="DC Logo Background">
-  </footer>
+  </header>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 
 </style>

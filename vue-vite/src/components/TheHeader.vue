@@ -21,15 +21,21 @@
 
 <template>
   <header>
-    <img src="../../vue-dc-comics-1/img/dc-logo.png" alt="DC Logo">
+    <div class="container d-flex justify-content-between align-items-center">
+      <img src="../../vue-dc-comics-1/img/dc-logo.png" alt="DC Logo">
 
-    <ul class="nav nav-pills">
-      <li class="nav-item" v-for="link in navLinks">
-        <a href="#" class="nav-link" :class="{ active: link.name === 'Prodotti' }">
-          {{ link.name }}
-        </a>
-      </li>
-    </ul>
+      <ul class="nav nav-pills">
+        <li class="nav-item" v-for="link in navLinks">
+          <a href="#" class="nav-link" :class="{ active: link.name === 'Prodotti' }">
+            {{ link.name }}
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div>
+
+    </div>
   </header>
 </template>
 

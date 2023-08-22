@@ -1,10 +1,12 @@
 <script>
   import TheHeader from "./components/TheHeader.vue";
   import TheFooter from "./components/TheFooter.vue";
+  import TheMain from "./components/TheMain.vue";
 
   export default {
     components: {
       TheHeader,
+      TheMain,
       TheFooter,
     },
     data() {
@@ -16,11 +18,7 @@
 <template>
   <TheHeader></TheHeader>
 
-  <main>
-    <div class="container text-center">
-
-    </div>
-  </main>
+  <TheMain></TheMain>
 
   <TheFooter></TheFooter>
 </template>

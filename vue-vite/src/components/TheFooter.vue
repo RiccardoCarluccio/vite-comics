@@ -90,7 +90,7 @@
       <div class="container-fluid bg-secondary">
         <div class="container d-flex justify-content-between align-items-center">
           <div>
-            <button type="button" class="btn btn-outline-primary text-uppercase">sign-up now!</button>
+            <button type="button" id="footer-button" class="btn btn-outline-primary text-uppercase text-white border-2">sign-up now!</button>
           </div>
           <div class="d-flex justify-content-end align-items-center gap-3 py-3">
             <h4 class="text-uppercase text-primary">follow us</h4>
@@ -109,5 +109,14 @@
 <style scoped>
   #footer-background {
     background-image: url("../../vue-dc-comics-1/img/footer-bg.jpg");
+    background-size: cover;
   }
+
+  #footer-button {
+    border-radius: 0;
+  }
+
+  li a {
+      font-size: 14px;
+    }
 </style>

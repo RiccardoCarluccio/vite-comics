@@ -23,7 +23,7 @@
   <header>
     <div class="container-fluid">
       <div class="container d-flex justify-content-between align-items-center py-4">
-        <img src="../../vue-dc-comics-1/img/dc-logo.png" alt="DC Logo">
+        <img id="logo" src="../../vue-dc-comics-1/img/dc-logo.png" alt="DC Logo">
 
         <ul class="nav nav-pills">
           <li class="nav-item" v-for="link in navLinks">
@@ -37,12 +37,14 @@
 
     <div class="container-fluid bg-black">
       <div class="container text-white py-5">
-        <h1> --&gt; Content goes here &lt;-- </h1>
+        <h1 class="fw-bold fs-4"> --&gt; Content goes here &lt;-- </h1>
       </div>
     </div>
   </header>
 </template>
 
 <style lang="scss" scoped>
-
+  #logo {
+    height: 75px;
+  }
 </style>

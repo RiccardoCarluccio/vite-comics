@@ -47,35 +47,49 @@
         <div class="d-flex justify-content-between align-items-center">
           <div class="d-flex">
             <div class="d-flex flex-wrap flex-column gap-5">
+              <h3 class="text-white text-uppercase fw-bold">
+                dc comics
+              </h3>
               <ul class="nav nav-pills d-flex flex-column">
                 <li class="nav-item" v-for="link in dcComicsLinks">
-                  <a href="#" class="nav-link" :class="{ active: link.name === 'Prodotti' }">
+                  <a href="#" class="nav-link text-white" :class="{ active: link.name === 'Prodotti' }">
                     {{ link.name }}
                   </a>
                 </li>
               </ul>
 
+              <h3 class="text-white text-uppercase fw-bold">
+                shop
+              </h3>
               <ul class="nav nav-pills d-flex flex-column">
                 <li class="nav-item" v-for="link in shop">
-                  <a href="#" class="nav-link" :class="{ active: link.name === 'Prodotti' }">
+                  <a href="#" class="nav-link text-white" :class="{ active: link.name === 'Prodotti' }">
                     {{ link.name }}
                   </a>
                 </li>
               </ul>
             </div>
+
             <div>
+              <h3 class="text-white text-uppercase fw-bold">
+                dc
+              </h3>
               <ul class="nav nav-pills d-flex flex-column">
                 <li class="nav-item" v-for="link in dc">
-                  <a href="#" class="nav-link" :class="{ active: link.name === 'Prodotti' }">
+                  <a href="#" class="nav-link text-white" :class="{ active: link.name === 'Prodotti' }">
                     {{ link.name }}
                   </a>
                 </li>
               </ul>
             </div>
+
             <div>
+              <h3 class="text-white text-uppercase fw-bold">
+                site
+              </h3>
               <ul class="nav nav-pills d-flex flex-column">
                 <li class="nav-item" v-for="link in sites">
-                  <a href="#" class="nav-link" :class="{ active: link.name === 'Prodotti' }">
+                  <a href="#" class="nav-link text-white" :class="{ active: link.name === 'Prodotti' }">
                     {{ link.name }}
                   </a>
                 </li>

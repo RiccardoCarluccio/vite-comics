@@ -34,12 +34,6 @@
         </ul>
       </div>
     </div>
-
-    <div class="container-fluid bg-black">
-      <div class="container text-white py-5">
-        <h1 class="fw-bold fs-4"> --&gt; Content goes here &lt;-- </h1>
-      </div>
-    </div>
   </header>
 </template>
 

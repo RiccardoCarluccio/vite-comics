@@ -2,12 +2,14 @@
   import TheHeader from "./components/TheHeader.vue";
   import TheFooter from "./components/TheFooter.vue";
   import TheMain from "./components/TheMain.vue";
+  import TheRealMain from "./components/TheRealMain.vue";
 
   export default {
     components: {
       TheHeader,
       TheMain,
       TheFooter,
+      TheRealMain,
     },
     data() {
       return {};
@@ -17,6 +19,8 @@
 
 <template>
   <TheHeader></TheHeader>
+
+  <TheRealMain></TheRealMain>
 
   <TheMain></TheMain>
 

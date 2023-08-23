@@ -130,7 +130,12 @@
     border-radius: 0;
   }
 
-  li a {
+  footer h3 {
+    margin-bottom: -10px;
+  }
+
+  footer a {
       font-size: 14px;
+      margin: -7px;
     }
 </style>

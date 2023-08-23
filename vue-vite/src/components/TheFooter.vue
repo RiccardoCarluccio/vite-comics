@@ -101,18 +101,18 @@
         </div>
       </div>
 
-      <div class="container-fluid bg-secondary">
+      <div class="container-fluid bg-dark">
         <div class="container d-flex justify-content-between align-items-center">
           <div>
             <button type="button" id="footer-button" class="btn btn-outline-primary text-uppercase text-white border-2">sign-up now!</button>
           </div>
           <div class="d-flex justify-content-end align-items-center gap-3 py-3">
             <h4 class="text-uppercase text-primary">follow us</h4>
-            <i class="fa-solid fa-dragon"></i>
-            <i class="fa-solid fa-dragon"></i>
-            <i class="fa-solid fa-dragon"></i>
-            <i class="fa-solid fa-dragon"></i>
-            <i class="fa-solid fa-dragon"></i>
+            <img src="../../vue-dc-comics-1/img/footer-facebook.png" alt="">
+            <img src="../../vue-dc-comics-1/img/footer-periscope.png" alt="">
+            <img src="../../vue-dc-comics-1/img/footer-pinterest.png" alt="">
+            <img src="../../vue-dc-comics-1/img/footer-twitter.png" alt="">
+            <img src="../../vue-dc-comics-1/img/footer-youtube.png" alt="">
           </div>
         </div>
       </div>
